@@ -6,6 +6,7 @@ import TwoColumnWithImageSection from "@/components/HomepageSections/TwoColumnWi
 import FeaturesSection from "@/components/HomepageSections/FeaturesSection.vue";
 import TestimonialsSection from "@/components/HomepageSections/TestimonialsSection.vue";
 import BlogSection from "@/components/HomepageSections/BlogSection.vue";
+import AdSection from "@/components/HomepageSections/AdSection.vue";
 import { useApiError } from "@/utils/hooks";
 import Seo from "@/components/Seo.vue";
 import {useRoute} from "vue-router";
@@ -64,5 +65,6 @@ onMounted(async () => {
       />
     </template>
     <blog-section :blog-posts="blogPosts" />
+    <ad-section :blog-posts="blogPosts" />
   </div>
 </template>
